@@ -1,2 +1,2 @@
 # PHP  
-Atividade de criação de Banco de Dados, Arquivo de Conexão e Sele.
+Atividade de criação de Banco de Dados, Arquivo de Conexão e Select.
