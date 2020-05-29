@@ -1,0 +1,23 @@
+//  Exemplo de conexão com php - 29/05/2020
+//  Parte do Bando de Dados (teste)  
+//=============================================
+
+CREATE DATABASE clientes;
+USE DATABASE clientes;
+
+CREATE TABLE cliente (
+    idCliente int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(255),
+    email varchar(255) UNIQUE,
+    cpf varchar(20) UNIQUE,
+    senha varchar(20));
+SHOW TABLES;  
+DESCRIBE cliente;
+
+INSERT  INTO  cliente ( idCliente, nome ,  cpf ,  email, senha ) VALUES 
+    (NULL, 'Beltrano', '123.456.789-00', 'beltrano@email.com', '012345') , 
+    (NULL, 'Cicrano', '123.546.789-00', 'cicrano@email.com', '543210') ,
+    (NULL, 'Fulano', ' 321.456.987-01 ', 'fulano@email.com', '02468' ) , 
+    (NULL, 'Pessoa qualquer', ' 123.654.789-03 ', 'pessoa@email.com', '13579' );
+
+DELETE FROM cliente WHERE idCliente=4;
